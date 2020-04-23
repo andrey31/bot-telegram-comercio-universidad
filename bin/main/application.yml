@@ -1,0 +1,16 @@
+server:
+  port: 4242
+bot:
+  token: ${token}
+  username: apoyo_ulatina_bot
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/bot_ulatina
+    username: root
+    password: ${passdb}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
